@@ -1,0 +1,113 @@
+{
+  "model": "gemini-3.8-flash",
+  "prompt": "Extract the invoice fields. Use null if a field is absent. Interpret ambiguous numeric dates as day/month/year. Return the grand total exactly as stated on the document, never recomputed. Items are only purchased products or services; do not list discount, tax or shipping lines as items.\n\n",
+  "preds": [
+    {
+      "invoice_number": "H1",
+      "invoice_date": "2026-08-07",
+      "currency": "USD",
+      "items": [
+        {
+          "description": "Monitor",
+          "quantity": 1.0,
+          "unit_price": 100.0
+        }
+      ],
+      "total": 100.0
+    },
+    {
+      "invoice_number": "INV-9001",
+      "invoice_date": "2026-06-11",
+      "currency": "USD",
+      "items": [
+        {
+          "description": "Keyboard",
+          "quantity": 1.0,
+          "unit_price": 25.0
+        }
+      ],
+      "total": 25.0
+    },
+    {
+      "invoice_number": "BIG-01",
+      "invoice_date": "2026-07-18",
+      "currency": "USD",
+      "items": [
+        {
+          "description": "Server",
+          "quantity": 1.0,
+          "unit_price": 1234.56
+        }
+      ],
+      "total": 1234.56
+    },
+    {
+      "invoice_number": "MISS-01",
+      "invoice_date": "2026-08-10",
+      "currency": "USD",
+      "items": [
+        {
+          "description": "Cable",
+          "quantity": 2.0,
+          "unit_price": 5.0
+        }
+      ],
+      "total": null
+    },
+    {
+      "invoice_number": "ML-01",
+      "invoice_date": "2026-09-22",
+      "currency": "USD",
+      "items": [
+        {
+          "description": "Annual Support Premium Package",
+          "quantity": 1.0,
+          "unit_price": 250.0
+        }
+      ],
+      "total": 250.0
+    }
+  ],
+  "scores": [
+    {
+      "invoice_number": true,
+      "invoice_date": true,
+      "currency": true,
+      "total": true,
+      "items_money": true,
+      "items_desc": true
+    },
+    {
+      "invoice_number": true,
+      "invoice_date": true,
+      "currency": true,
+      "total": true,
+      "items_money": true,
+      "items_desc": true
+    },
+    {
+      "invoice_number": true,
+      "invoice_date": true,
+      "currency": true,
+      "total": true,
+      "items_money": true,
+      "items_desc": true
+    },
+    {
+      "invoice_number": true,
+      "invoice_date": true,
+      "currency": true,
+      "total": true,
+      "items_money": true,
+      "items_desc": true
+    },
+    {
+      "invoice_number": true,
+      "invoice_date": true,
+      "currency": true,
+      "total": true,
+      "items_money": true,
+      "items_desc": true
+    }
+  ]
+}

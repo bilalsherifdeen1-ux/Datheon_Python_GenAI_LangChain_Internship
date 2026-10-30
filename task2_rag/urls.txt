@@ -1,0 +1,16 @@
+# Candidate corpus for Task 2. One URL per line; lines starting with # are ignored.
+# These follow the WHO fact-sheet URL pattern. NOT all are verified: run fetch_corpus.py,
+# check that each prints status 200 and a sensible title, and replace any that fail
+# with the exact address copied from your browser.
+https://www.who.int/news-room/fact-sheets/detail/hypertension
+https://www.who.int/news-room/fact-sheets/detail/diabetes
+https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight
+https://www.who.int/news-room/fact-sheets/detail/physical-activity
+https://www.who.int/news-room/fact-sheets/detail/tobacco
+https://www.who.int/news-room/fact-sheets/detail/alcohol
+https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health
+https://www.who.int/news-room/fact-sheets/detail/depression
+https://www.who.int/news-room/fact-sheets/detail/malaria
+https://www.who.int/news-room/fact-sheets/detail/tuberculosis
+https://www.who.int/news-room/fact-sheets/detail/immunization-coverage
+https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance

@@ -1,0 +1,230 @@
+{
+  "config": {
+    "chunk_words": 150,
+    "stride_words": 100,
+    "top_k": 10,
+    "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "bm25": "rank_bm25 BM25Okapi (k1=1.5, b=0.75), lowercase alphanumeric tokens, small stopword list",
+    "questions": "questions.jsonl",
+    "corpus": "data/corpus_clean.json"
+  },
+  "chunks": 178,
+  "results": {
+    "Q1": {
+      "type": "figure",
+      "answerable": true,
+      "bm25_k": 1,
+      "dense_k": 1,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc01_hypertension",
+        "doc01_hypertension",
+        "doc01_hypertension"
+      ],
+      "dense_top3_docs": [
+        "doc01_hypertension",
+        "doc01_hypertension",
+        "doc01_hypertension"
+      ]
+    },
+    "Q2": {
+      "type": "figure",
+      "answerable": true,
+      "bm25_k": 1,
+      "dense_k": 1,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc10_tuberculosis",
+        "doc10_tuberculosis",
+        "doc12_antimicrobial-resistance"
+      ],
+      "dense_top3_docs": [
+        "doc10_tuberculosis",
+        "doc10_tuberculosis",
+        "doc10_tuberculosis"
+      ]
+    },
+    "Q3": {
+      "type": "figure",
+      "answerable": true,
+      "bm25_k": null,
+      "dense_k": 2,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc09_malaria",
+        "doc09_malaria",
+        "doc09_malaria"
+      ],
+      "dense_top3_docs": [
+        "doc09_malaria",
+        "doc09_malaria",
+        "doc09_malaria"
+      ]
+    },
+    "Q4": {
+      "type": "list",
+      "answerable": true,
+      "bm25_k": 3,
+      "dense_k": 1,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc08_depression",
+        "doc08_depression",
+        "doc01_hypertension"
+      ],
+      "dense_top3_docs": [
+        "doc01_hypertension",
+        "doc01_hypertension",
+        "doc01_hypertension"
+      ]
+    },
+    "Q5": {
+      "type": "list",
+      "answerable": true,
+      "bm25_k": null,
+      "dense_k": 3,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc02_diabetes",
+        "doc09_malaria",
+        "doc01_hypertension"
+      ],
+      "dense_top3_docs": [
+        "doc02_diabetes",
+        "doc02_diabetes",
+        "doc02_diabetes"
+      ]
+    },
+    "Q6": {
+      "type": "list",
+      "answerable": true,
+      "bm25_k": null,
+      "dense_k": 1,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc12_antimicrobial-resistance",
+        "doc12_antimicrobial-resistance",
+        "doc12_antimicrobial-resistance"
+      ],
+      "dense_top3_docs": [
+        "doc12_antimicrobial-resistance",
+        "doc12_antimicrobial-resistance",
+        "doc12_antimicrobial-resistance"
+      ]
+    },
+    "Q7": {
+      "type": "multi",
+      "answerable": true,
+      "bm25_k": null,
+      "dense_k": null,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc03_obesity-and-overweight",
+        "doc02_diabetes",
+        "doc03_obesity-and-overweight"
+      ],
+      "dense_top3_docs": [
+        "doc03_obesity-and-overweight",
+        "doc03_obesity-and-overweight",
+        "doc03_obesity-and-overweight"
+      ]
+    },
+    "Q8": {
+      "type": "multi",
+      "answerable": true,
+      "bm25_k": null,
+      "dense_k": null,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc06_alcohol",
+        "doc06_alcohol",
+        "doc06_alcohol"
+      ],
+      "dense_top3_docs": [
+        "doc05_tobacco",
+        "doc05_tobacco",
+        "doc05_tobacco"
+      ]
+    },
+    "Q9": {
+      "type": "near_miss",
+      "answerable": false,
+      "bm25_k": null,
+      "dense_k": null,
+      "bm25_probe_rank": 2,
+      "dense_probe_rank": 1,
+      "bm25_top3_docs": [
+        "doc01_hypertension",
+        "doc11_immunization-coverage",
+        "doc04_physical-activity"
+      ],
+      "dense_top3_docs": [
+        "doc11_immunization-coverage",
+        "doc11_immunization-coverage",
+        "doc12_antimicrobial-resistance"
+      ]
+    },
+    "Q10": {
+      "type": "absent",
+      "answerable": false,
+      "bm25_k": null,
+      "dense_k": null,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc01_hypertension",
+        "doc07_ambient-outdoor-air-quality-and-health",
+        "doc03_obesity-and-overweight"
+      ],
+      "dense_top3_docs": [
+        "doc11_immunization-coverage",
+        "doc11_immunization-coverage",
+        "doc11_immunization-coverage"
+      ]
+    },
+    "Q11": {
+      "type": "out_of_scope",
+      "answerable": false,
+      "bm25_k": null,
+      "dense_k": null,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc01_hypertension",
+        "doc02_diabetes",
+        "doc08_depression"
+      ],
+      "dense_top3_docs": [
+        "doc10_tuberculosis",
+        "doc04_physical-activity",
+        "doc04_physical-activity"
+      ]
+    },
+    "Q12": {
+      "type": "out_of_scope",
+      "answerable": false,
+      "bm25_k": null,
+      "dense_k": null,
+      "bm25_probe_rank": null,
+      "dense_probe_rank": null,
+      "bm25_top3_docs": [
+        "doc06_alcohol",
+        "doc12_antimicrobial-resistance",
+        "doc05_tobacco"
+      ],
+      "dense_top3_docs": [
+        "doc10_tuberculosis",
+        "doc10_tuberculosis",
+        "doc10_tuberculosis"
+      ]
+    }
+  }
+}

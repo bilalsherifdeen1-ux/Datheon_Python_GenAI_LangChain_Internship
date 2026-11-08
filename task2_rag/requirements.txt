@@ -1,2 +1,7 @@
 requests
 beautifulsoup4
+numpy
+rank_bm25
+sentence-transformers
+google-genai
+tenacity

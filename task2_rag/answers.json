@@ -1,0 +1,265 @@
+{
+  "config": {
+    "model": "gemini-3.7-flash",
+    "temperature": 0,
+    "retriever": "dense (sentence-transformers/all-MiniLM-L6-v2), top 3 chunks",
+    "rag_rule": "Answer only using the supplied passages. If the passages do not contain the answer, explicitly state that the answer is not available in the provided material.",
+    "no_retrieval_prompt": "Answer the following question. Be concise.",
+    "suffix": "Be concise."
+  },
+  "complete": true,
+  "items": [
+    {
+      "id": "Q1",
+      "type": "figure",
+      "question": "Worldwide, about how many adults live with high blood pressure?",
+      "rag_sources": [
+        [
+          "doc01_hypertension",
+          0
+        ],
+        [
+          "doc01_hypertension",
+          10
+        ],
+        [
+          "doc01_hypertension",
+          1
+        ]
+      ],
+      "rag_answer": "Based on the provided passages, an estimated 1.4 billion adults (aged 30–79 years) worldwide had high blood pressure in 2024.",
+      "norag_answer": "About **1.28 billion** adults worldwide (aged 30–79) live with high blood pressure, according to the World Health Organization."
+    },
+    {
+      "id": "Q2",
+      "type": "figure",
+      "question": "According to the tuberculosis fact sheet, how many people were estimated to have fallen ill with tuberculosis in the most recent year reported?",
+      "rag_sources": [
+        [
+          "doc10_tuberculosis",
+          0
+        ],
+        [
+          "doc10_tuberculosis",
+          14
+        ],
+        [
+          "doc10_tuberculosis",
+          12
+        ]
+      ],
+      "rag_answer": "In 2024, an estimated 10.7 million people fell ill with tuberculosis worldwide.",
+      "norag_answer": "According to the World Health Organization (WHO) tuberculosis fact sheet, an estimated **10.8 million people** fell ill with tuberculosis worldwide in 2023 (the most recent year reported). *(Note: Reports from the previous year estimated 10.6 million in 2022).*"
+    },
+    {
+      "id": "Q3",
+      "type": "figure",
+      "question": "According to the malaria fact sheet, how many malaria deaths were reported in the most recent year reported?",
+      "rag_sources": [
+        [
+          "doc09_malaria",
+          4
+        ],
+        [
+          "doc09_malaria",
+          0
+        ],
+        [
+          "doc09_malaria",
+          14
+        ]
+      ],
+      "rag_answer": "In 2024, the most recent year reported, there were an estimated 610,000 malaria deaths.",
+      "norag_answer": "According to the World Health Organization (WHO) malaria fact sheet, there were an estimated **597,000 deaths** in 2023 (the most recent year reported). \n\n*(Note: In the previous year's report for 2022, the estimate was 608,000 deaths).*"
+    },
+    {
+      "id": "Q4",
+      "type": "list",
+      "question": "What factors make a person more likely to develop persistently raised blood pressure?",
+      "rag_sources": [
+        [
+          "doc01_hypertension",
+          2
+        ],
+        [
+          "doc01_hypertension",
+          0
+        ],
+        [
+          "doc01_hypertension",
+          9
+        ]
+      ],
+      "rag_answer": "Based on the provided passages, the risk factors for hypertension (raised blood pressure) include:\n\n* **Modifiable risk factors:** Unhealthy diets (excessive salt intake, high saturated and trans fats, and low intake of fruits and vegetables), physical inactivity, tobacco and alcohol consumption, and being overweight or obese.\n* **Environmental risk factors:** Air pollution (the most significant).\n* **Non-modifiable risk factors:** Family history (the text cuts off after \"a family\").",
+      "norag_answer": "The risk factors for developing persistently raised blood pressure (hypertension) include:\n\n* **Lifestyle factors:** High sodium (salt) intake, lack of physical activity, being overweight or obese, excessive alcohol consumption, tobacco use, and chronic stress.\n* **Non-modifiable factors:** Older age, a family history of hypertension, and certain ethnicities (particularly people of Black African or Caribbean descent).\n* **Underlying medical conditions:** Diabetes, chronic kidney disease, obstructive sleep apnea, and certain hormonal disorders.\n* **Certain medications:** Regular use of oral contraceptives, decongestants, or nonsteroidal anti-inflammatory drugs (NSAIDs)."
+    },
+    {
+      "id": "Q5",
+      "type": "list",
+      "question": "What can people do to lower their chances of getting the most common form of diabetes?",
+      "rag_sources": [
+        [
+          "doc02_diabetes",
+          0
+        ],
+        [
+          "doc02_diabetes",
+          9
+        ],
+        [
+          "doc02_diabetes",
+          8
+        ]
+      ],
+      "rag_answer": "The answer is not available in the provided material, as the passages do not identify which form of diabetes is the most common. \n\n*(Note: To prevent or delay **type 2 diabetes**, the passages state that people can maintain a healthy body weight, engage in at least 150 minutes of moderate physical activity weekly, eat a healthy diet avoiding sugar and saturated fats, and avoid tobacco use.)*",
+      "norag_answer": "To lower the risk of developing type 2 diabetes (the most common form), people can:\n\n* **Maintain a healthy weight:** Losing 5% to 7% of excess body weight significantly reduces risk.\n* **Stay physically active:** Aim for at least 150 minutes of moderate-intensity exercise (like brisk walking) per week.\n* **Eat a balanced diet:** Focus on whole grains, lean proteins, vegetables, and fiber while minimizing refined carbohydrates, saturated fats, and sugary drinks.\n* **Avoid tobacco:** Do not smoke or quit if you do, as nicotine increases insulin resistance.\n* **Limit alcohol intake:** Drink only in moderation."
+    },
+    {
+      "id": "Q6",
+      "type": "list",
+      "question": "What steps does WHO's plan set out to slow the spread of drug-resistant infections?",
+      "rag_sources": [
+        [
+          "doc12_antimicrobial-resistance",
+          13
+        ],
+        [
+          "doc12_antimicrobial-resistance",
+          3
+        ],
+        [
+          "doc12_antimicrobial-resistance",
+          5
+        ]
+      ],
+      "rag_answer": "Based on the provided passages, the plan outlines six interconnected strategic objectives:\n\n1. **Strengthen awareness and promote social and behavioural change** to reduce AMR risks across all sectors.\n2. **Strengthen surveillance systems and laboratory networks** to guide evidence-driven policies and actions.\n3. **Intensify infection prevention across all sectors** to reduce infectious disease burden and antimicrobial need.\n4. **Ensure equitable access, appropriate use, and safe disposal** of antimicrobials, diagnostics, and other health products.\n5. **Accelerate AMR research and innovation** across all sectors.\n6. **Strengthen multisectoral governance, sustainable financing, and accountability** for a coordinated response across all sectors and levels.",
+      "norag_answer": "The WHO’s Global Action Plan outlines five key strategic steps to slow the spread of drug-resistant infections:\n\n1. **Improve awareness:** Increase understanding of antimicrobial resistance (AMR) through effective communication, education, and training.\n2. **Strengthen surveillance and research:** Monitor resistance patterns and gather data through enhanced global and national surveillance systems.\n3. **Reduce infection rates:** Prevent infections through effective sanitation, hygiene, and infection-control practices in healthcare settings and communities.\n4. **Optimize antimicrobial use:** Promote the responsible, appropriate use of antibiotics in human medicine and agriculture (stewardship).\n5. **Increase sustainable investment:** Secure funding for research and development of new medicines, vaccines, and diagnostic tools."
+    },
+    {
+      "id": "Q7",
+      "type": "multi",
+      "question": "Compare the major risk factors discussed in the diabetes and obesity fact sheets.",
+      "rag_sources": [
+        [
+          "doc03_obesity-and-overweight",
+          1
+        ],
+        [
+          "doc03_obesity-and-overweight",
+          8
+        ],
+        [
+          "doc03_obesity-and-overweight",
+          4
+        ]
+      ],
+      "rag_answer": "The provided material only includes excerpts from the obesity fact sheet and does not contain the diabetes fact sheet; therefore, the answer comparing the major risk factors between the two is not available in the provided passages.",
+      "norag_answer": "Based on standard public health fact sheets (such as WHO and CDC):\n\n* **Shared Risk Factors:** \n  * **Lifestyle:** Physical inactivity and unhealthy diets (high in sugars, saturated fats, and processed foods).\n  * **Genetics:** Family history and genetic predisposition.\n  * **Social Determinants:** Limited access to healthy food, safe recreational spaces, and healthcare.\n\n* **Interconnection:** \n  * **Overweight/obesity is the leading modifiable risk factor for type 2 diabetes.** \n\n* **Unique to Type 2 Diabetes:**\n  * **Demographics:** Advancing age (45+) and specific racial/ethnic backgrounds (e.g., Black, Hispanic, Asian American, Indigenous populations).\n  * **Medical History:** Prior gestational diabetes, polycystic ovary syndrome (PCOS), prediabetes, and high blood pressure.\n\n* **Unique/Emphasized in Obesity:**\n  * **Energy Imbalance:** The core biological driver of consuming more calories than expended.\n  * **Broader Influences:** Chronic sleep deprivation, high stress, obesogenic food marketing, and side effects of specific medications (e.g., corticosteroids, certain antidepressants)."
+    },
+    {
+      "id": "Q8",
+      "type": "multi",
+      "question": "Compare the WHO recommendations for reducing harm from tobacco use and alcohol consumption.",
+      "rag_sources": [
+        [
+          "doc05_tobacco",
+          12
+        ],
+        [
+          "doc05_tobacco",
+          13
+        ],
+        [
+          "doc05_tobacco",
+          0
+        ]
+      ],
+      "rag_answer": "The provided material contains information about WHO initiatives for tobacco control (such as the WHO FCTC and MPOWER measures), but it does not contain any information about alcohol consumption or WHO recommendations for reducing harm from alcohol. Therefore, this comparison is not available in the provided material.",
+      "norag_answer": "The World Health Organization (WHO) addresses tobacco primarily through the legally binding **FCTC (MPOWER package)** and alcohol through the voluntary **Global Alcohol Action Plan (SAFER package)**. \n\n### **Key Similarities**\nBoth strategies rely on high-impact, cost-effective population measures (\"Best Buys\"):\n* **Taxation & Pricing:** Increasing excise taxes to reduce affordability.\n* **Marketing Bans:** Restricting or banning advertising, promotions, and sponsorships.\n* **Cessation & Treatment:** Expanding access to brief interventions, screening, and treatment services in primary care.\n\n### **Key Differences**\n* **Overarching Goal:** \n  * *Tobacco:* Targets total cessation and elimination, recognizing no safe level of exposure.\n  * *Alcohol:* Historically focuses on reducing \"harmful use\" and high-risk behaviors (e.g., binge drinking, underage drinking), though current guidance emphasizes that no amount is risk-free.\n* **Environmental & Behavioral Controls:**\n  * *Tobacco:* Emphasizes **smoke-free public spaces** to eliminate secondhand smoke exposure.\n  * *Alcohol:* Emphasizes **drink-driving countermeasures** (e.g., blood alcohol concentration limits, sobriety checkpoints).\n* **Availability & Packaging:**\n  * *Tobacco:* Focuses heavily on **prominent graphic health warnings** and plain packaging on products.\n  * *Alcohol:* Focuses on **restricting physical availability** (e.g., limiting hours/days of sale, outlet density, and minimum legal purchase age)."
+    },
+    {
+      "id": "Q9",
+      "type": "near_miss",
+      "question": "Which document discusses Ebola treatment guidelines?",
+      "rag_sources": [
+        [
+          "doc11_immunization-coverage",
+          14
+        ],
+        [
+          "doc11_immunization-coverage",
+          5
+        ],
+        [
+          "doc12_antimicrobial-resistance",
+          1
+        ]
+      ],
+      "rag_answer": "The provided material does not contain information about which document discusses Ebola treatment guidelines.",
+      "norag_answer": "The primary authoritative document is the World Health Organization’s (WHO) **\"Therapeutics for Ebola virus disease\"** (WHO clinical practice guideline), along with the CDC's **\"Guidance for the Management of Patients with Ebola Virus Disease.\"**"
+    },
+    {
+      "id": "Q10",
+      "type": "absent",
+      "question": "Which document discusses sickle-cell disease management?",
+      "rag_sources": [
+        [
+          "doc11_immunization-coverage",
+          1
+        ],
+        [
+          "doc11_immunization-coverage",
+          0
+        ],
+        [
+          "doc11_immunization-coverage",
+          6
+        ]
+      ],
+      "rag_answer": "The answer is not available in the provided material.",
+      "norag_answer": "The primary clinical guideline is the **\"Evidence-Based Management of Sickle Cell Disease: Expert Panel Report\"** (published by the National Heart, Lung, and Blood Institute / NHLBI), along with the **American Society of Hematology (ASH) Clinical Practice Guidelines for Sickle Cell Disease**."
+    },
+    {
+      "id": "Q11",
+      "type": "out_of_scope",
+      "question": "What is WHO's annual budget for maintaining the programmes described in these documents?",
+      "rag_sources": [
+        [
+          "doc10_tuberculosis",
+          16
+        ],
+        [
+          "doc04_physical-activity",
+          11
+        ],
+        [
+          "doc04_physical-activity",
+          12
+        ]
+      ],
+      "rag_answer": "The answer is not available in the provided material.",
+      "norag_answer": "Because no documents were provided, the specific programmes and their associated budget cannot be determined. \n\n*(For reference, the World Health Organization’s total approved programme budget for the 2024–2025 biennium is approximately $6.83 billion, or roughly $3.4 billion annually.)*"
+    },
+    {
+      "id": "Q12",
+      "type": "out_of_scope",
+      "question": "What is the average salary of the researchers who authored these documents?",
+      "rag_sources": [
+        [
+          "doc10_tuberculosis",
+          15
+        ],
+        [
+          "doc10_tuberculosis",
+          16
+        ],
+        [
+          "doc10_tuberculosis",
+          12
+        ]
+      ],
+      "rag_answer": "The answer is not available in the provided material.",
+      "norag_answer": "No documents were provided, so it is impossible to determine the average salary. Please provide the relevant documents."
+    }
+  ]
+}
